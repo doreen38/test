@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./datatables.min.css">
+    <!-- jquery cnd -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tab one</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tab two</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="mt-3 bg-light rounded-2 d-flex justify-content-center align-items-center p-2 w-50">
+                    <form class="row g-3" id="myfrom">
+                        <h2 class="text-center">Registration</h2>
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" placeholder="First Name" required name="firstName" class="form-control"
+                                id="firstName">
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Middle Name</label>
+                            <input type="text" placeholder="Middle Name" required name="middleName" class="form-control"
+                                id="middleName">
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Middle Name</label>
+                            <input type="text" placeholder=" Last Name" name="lastName" required class="form-control"
+                                id="lastName">
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" placeholder="Date of Birth" name="dob" class="form-control" id="dob"
+                                required>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phoneNo" class="form-label">Phone Number</label>
+                            <input type="number" placeholder="0703 859 9558 " name="phoneNum" class="form-control"
+                                id="phoneNum" required>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="sex" class="form-label">Gender</label>
+                            <select id="sex" class="form-select" name="sex" required>
+                                <option selected>Gender</option>
+                                <option>Female</option>
+                                <option>Male</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="country" class="form-label">Country</label>
+                            <select id="country" class="form-select" name="country" required>
+                                <option selected>Country</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select" name="state" required>
+                                <option selected>State</option>
+                                <option>...</option>
+                            </select>
+
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="localGv" class="form-label">Local Government</label>
+                            <select class="form-select" id="localGv" name="localGV" aria-label="Default select local"
+                                required>
+                                <option selected>Local Govt</option>
+                                <!-- <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option> -->
+                            </select>
+
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane  fade p-5" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="container p-0 m-2">
+                    <div class="panel">
+                        <button id="loadData" class="btn btn-default">Load Data</button>
+                    </div>
+                    <table id="tableList" class="display m-4" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Middle Name</th>
+                                <th>Date of Birth</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th>State</th>
+                                <th>Local Government</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="./jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="./bootstrap.bundle.min.js"></script>
+        <!-- <script src="./datatables.min.js"></script> -->
+        <script src="./dataTables.responsive.min.js"></script>
+        <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+
+
+.error{
+	display: none;
+	margin: 10px;
+}		
+
+.error_show{
+	color: red;
+	margin: 10px;
+}
